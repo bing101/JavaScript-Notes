@@ -21,3 +21,11 @@ listItems.forEach( function(item) { console.log(item.textContent) } )
 const ul = document.querySelector('.myUL');
 
 ul.firstChild.textContent = 'Modified'
+
+const btn = document.querySelector('.btn');
+console.log(btn);
+btn.addEventListener('click', (e) =>  {
+    e.preventDefault();
+    console.log('button clicked')
+    btn.style.color = '#ccc'
+});
