@@ -1,0 +1,27 @@
+[
+    {
+        "id": 1,
+        "name": "Avinash",
+        "email": "avinashSharma@gmail.com"
+    },
+    {
+        "id": 2,
+        "name": "Harish Mehta",
+        "email": "harryMehta@gmail.com"
+    },
+    {
+        "id": 3,
+        "name": "Mansi Chandel",
+        "email": "mansi29292@gmail.com"
+    },
+    {
+        "id": 4,
+        "name": "Ronit Gupta",
+        "email": "rony_gupta@gmail.com"
+    },
+    {
+        "id": 5,
+        "name": "Vanshika Jamwal",
+        "email": "Vanshika101Jamwal@gmail.com"
+    }
+]
