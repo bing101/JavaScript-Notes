@@ -4,8 +4,14 @@ const path = require('path')
 // Gets the base file name
 
 const filename = path.basename(__filename);
+
+// Get parent directory name
 const dirName = path.dirname(__filename);
+
+// Get file extention
 const ext = path.extname(__filename);
 
-console.log(ext)
+// Concatinate path
+const conPath = path.join(path.basename(__dirname), 'tests', 'index.html')
+console.log(conPath)
 
