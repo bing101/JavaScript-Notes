@@ -36,4 +36,22 @@ router.post("/", (req, res) => {
   res.send(members);
 });
 
+// Handling Put request
+router.put("/:id", (req, res) => {
+  const memberId = req.params.id;
+  const found = members.some((m) => m.id === parseInt(memberId));
+  if (found) {
+    members.forEach((m) => {
+      if (m.id === parseInt(memberId)) {
+        m.name = req.body.name ? req.body.name : m.name;
+        m.mail = req.body.email ? req.body.email : req.email;
+
+        return res.send(m);
+      }
+    });
+  } else {
+    res.status(400).json({ msg: "Member not found" });
+  }
+});
+
 module.exports = router;
