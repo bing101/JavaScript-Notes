@@ -12,6 +12,10 @@ const PORT = process.env.PORT || 5000;
 // Use middleware
 app.use(logger);
 
+// We need a body parser middleware to parse
+// incoming http post request
+app.use(express.json());
+
 // Setting up a routes
 app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "public", "index.html"), (err) => {
@@ -19,7 +23,7 @@ app.get("/", (req, res) => {
   });
 });
 
-// Members routing
+// Members API route
 app.use("/api/members", require("./routes/api/members"));
 
 // Setup server
