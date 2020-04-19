@@ -28,3 +28,5 @@ app.use("/api/members", require("./routes/api/members"));
 
 // Setup server
 app.listen(PORT, () => console.log("Server started on port " + PORT));
+
+

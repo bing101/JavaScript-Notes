@@ -19,6 +19,7 @@ function ListData(){
     fetch(url)
     .then( res => res.json() )
     .then( data => {
+        console.log(data);
         const arr = data.records;
         Display(arr);
     } );
