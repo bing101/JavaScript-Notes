@@ -1,0 +1,32 @@
+:root {
+  font-size: 16px;
+  font-family: "Open Sans";
+  --text-primary: #0b2c8b;
+  --text-secondary: #90d6fb;
+  --bg-primary: #3278b1;
+}
+
+body {
+  color: black;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  margin-left: 5rem;
+  padding: 1rem;
+}
+
+/* Style scroll bar */
+body::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #050c31;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: red;
+}
