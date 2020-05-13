@@ -1,4 +1,5 @@
 import React from "react"
+import Link from "gatsby-link"
 import "../css/Navbar.css"
 import "../css/Layout.css"
 
@@ -80,7 +81,7 @@ const Navbar = () => (
         </li>
 
         <li class="nav-item">
-          <a href="#" class="nav-link">
+          <Link to="/blog" class="nav-link">
             <svg
               aria-hidden="true"
               focusable="false"
@@ -116,7 +117,7 @@ const Navbar = () => (
               </g>
             </svg>
             <span class="link-text">Blog</span>
-          </a>
+          </Link>
         </li>
 
         <li class="nav-item">
