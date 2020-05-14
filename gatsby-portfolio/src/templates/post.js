@@ -1,6 +1,6 @@
 import React from "react"
 import Link from "gatsby-link"
-
+import Navbar from "../components/Navbar"
 // data prop is the query injected by graphql schema
 
 const template = ({ data }) => {
@@ -8,6 +8,7 @@ const template = ({ data }) => {
   const post = data.markdownRemark
   return (
     <div>
+      <Navbar />
       <Link to="/blog"> Go back </Link>
       <hr />
       <h1>{post.frontmatter.title}</h1>

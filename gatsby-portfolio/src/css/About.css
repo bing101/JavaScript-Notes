@@ -1,0 +1,17 @@
+.About {
+  background-color: rgba(178, 226, 245, 0.6);
+  width: auto;
+  height: auto;
+  min-width: 390px;
+  max-width: 1450px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.About p {
+  color: rgb(7, 9, 100);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 2rem;
+}

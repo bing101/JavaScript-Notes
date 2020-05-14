@@ -1,9 +1,11 @@
 import React from "react"
 import Link from "gatsby-link"
 import { graphql } from "gatsby"
+import Navbar from "../components/Navbar"
 
 const BlogPage = ({ data }) => (
   <div>
+    <Navbar />
     <h1>Latest Posts</h1>
     {data.allMarkdownRemark.edges.map(post => (
       <div key={post.node.id}>

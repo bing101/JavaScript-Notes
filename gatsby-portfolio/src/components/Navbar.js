@@ -39,7 +39,7 @@ const Navbar = () => (
         </li>
 
         <li class="nav-item">
-          <a href="#" class="nav-link">
+          <Link to="/" class="nav-link">
             <svg
               aria-hidden="true"
               focusable="false"
@@ -77,7 +77,7 @@ const Navbar = () => (
               </g>
             </svg>
             <span class="link-text">About</span>
-          </a>
+          </Link>
         </li>
 
         <li class="nav-item">
