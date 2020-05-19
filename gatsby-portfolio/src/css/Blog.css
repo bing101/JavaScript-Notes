@@ -1,0 +1,23 @@
+.blogs-container {
+  text-align: center;
+  margin-left: 10rem;
+}
+
+.blog-header {
+  align-items: center;
+  margin-left: 10rem;
+  text-align: center;
+  padding: 2px;
+  border-radius: 25px;
+
+  min-width: 250px;
+  max-width: 760px;
+
+  margin-right: 10rem;
+}
+
+@media only screen and (max-width: 1500px) {
+  .blogs-container {
+    margin: 1.5rem;
+  }
+}

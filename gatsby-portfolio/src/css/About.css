@@ -1,17 +1,27 @@
 .About {
-  background-color: rgba(178, 226, 245, 0.6);
+  background-color: rgba(191, 220, 231, 0.2);
   width: auto;
-  height: auto;
-  min-width: 390px;
-  max-width: 1450px;
-  margin-left: auto;
-  margin-right: auto;
+
+  min-width: 250px;
+  max-width: 740px;
+  margin-top: 3rem;
+  margin-left: 10rem;
+  margin-right: 10rem;
+
   padding: 20px;
   border-radius: 20px;
+  -webkit-box-shadow: 0 8px 6px -6px black;
+  -moz-box-shadow: 0 8px 6px -6px black;
+  box-shadow: 0 8px 8px -8px black;
 }
 
 .About p {
-  color: rgb(7, 9, 100);
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 2rem;
+  color: rgb(0, 41, 88);
+  font-size: 1rem;
+}
+
+@media only screen and (max-width: 1500px) {
+  .About {
+    margin: auto;
+  }
 }

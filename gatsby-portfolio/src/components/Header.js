@@ -1,10 +1,10 @@
 import React from "react"
+import "../css/Header.css"
 
 const Header = () => (
   <div className="Header">
-    <h1>Arjun</h1>
-    <p> Web Developer </p>
-    <p> I do a bunch of stuff but mosty I am a web developer</p>
+    <h1 id="header-title">Arjun</h1>
+    <p id="subheader-text"> Web Developer </p>
   </div>
 )
 
