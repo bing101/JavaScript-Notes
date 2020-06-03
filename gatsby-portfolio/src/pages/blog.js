@@ -2,25 +2,29 @@ import React from "react"
 import Link from "gatsby-link"
 import { graphql } from "gatsby"
 import Navbar from "../components/Navbar"
+import Header from "../components/Header"
 import "../css/Blog.css"
 
 const BlogPage = ({ data }) => (
   <div>
+    <Header content={"Outlook"} />
     <Navbar />
-    <div className="blog-header">
-      <h1>Latest Posts</h1>
-    </div>
 
     <br />
 
     <div className="blogs-container">
       {data.allMarkdownRemark.edges.map(post => (
         <div key={post.node.id}>
-          <h3> {post.node.frontmatter.title} </h3>
-          <small> {post.node.frontmatter.date}</small>
-          <br />
-          <br />
-          <Link to={post.node.frontmatter.path}>Read more . .</Link>
+          <Link to={post.node.frontmatter.path} className="heading-link">
+            {" "}
+            <h3> {post.node.frontmatter.title} </h3>
+            <small className="date"> {post.node.frontmatter.date}</small>
+            <br />
+            <br />
+            <Link to={post.node.frontmatter.path} className="read-more">
+              Read more. . . &nbsp;&nbsp;
+            </Link>
+          </Link>
           <br />
         </div>
       ))}
@@ -29,6 +33,7 @@ const BlogPage = ({ data }) => (
   </div>
 )
 
+// Graphql query
 export const pageQuery = graphql`
   query BlogIndexQuery {
     allMarkdownRemark {
@@ -37,7 +42,7 @@ export const pageQuery = graphql`
           id
           frontmatter {
             title
-            path
+            date
             path
           }
         }
@@ -45,4 +50,18 @@ export const pageQuery = graphql`
     }
   }
 `
+
+// export const pageQuery = graphql`
+//   query BlogPostByPath($path: String!) {
+//     markdownRemark(frontmatter: { path: { eq: $path } }) {
+//       html
+//       frontmatter {
+//         path
+//         title
+//         date
+//       }
+//     }
+//   }
+// `
+// `
 export default BlogPage

@@ -1,31 +1,30 @@
 .Header {
   align-items: center;
   margin-left: 10rem;
-  background-color: rgb(15, 57, 92);
+  background-color: rgb(243, 235, 235);
   padding: 2px;
   border-radius: 25px;
-  border: solid 1px rgb(186, 226, 231);
+  border: solid 1px rgb(255, 255, 255);
   -webkit-box-shadow: 0 8px 6px -6px black;
   -moz-box-shadow: 0 8px 6px -6px black;
-  box-shadow: 0 8px 8px -8px black;
+  box-shadow: 0 8px 8px -8px rgb(255, 0, 0);
   min-width: 250px;
-  max-width: 760px;
 
-  margin-right: 10rem;
+  margin-right: 5rem;
 }
 
 #header-title {
-  color: white;
+  color: rgb(0, 41, 88);
+  font-size: 3rem;
   text-align: center;
   font-weight: bold;
 }
 
 #subheader-text {
-  color: rgb(255, 255, 255);
+  color: rgb(5, 1, 22);
 
   text-align: center;
 }
-
 
 @media only screen and (max-width: 1500px) {
   .Header {

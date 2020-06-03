@@ -1,6 +1,7 @@
 import React from "react"
 import Link from "gatsby-link"
 import Navbar from "../components/Navbar"
+import "../css/posts.css"
 // data prop is the query injected by graphql schema
 
 const template = ({ data }) => {
@@ -12,7 +13,7 @@ const template = ({ data }) => {
       <Link to="/blog"> Go back </Link>
       <hr />
       <div className="container">
-        <h1>{post.frontmatter.title}</h1>
+        <h1 className="header">{post.frontmatter.title}</h1>
         <h4>{post.frontmatter.date}</h4>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
       </div>
