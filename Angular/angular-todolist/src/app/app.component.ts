@@ -13,5 +13,5 @@ export class AppComponent {
     console.log('Component Loaded');
   }
 
-  title: string = 'angular-todolist';
+  title: string = 'Todo List';
 }

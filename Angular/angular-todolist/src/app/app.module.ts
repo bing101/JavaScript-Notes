@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TodosComponent } from './components/todos/todos.component';
+import { TodoItemComponent } from './components/todo-item/todo-item.component';
 
 // Whenever you are aadding a new component, it has to go here in the declarations
 // AppCompononet is the main component
@@ -11,7 +12,8 @@ import { TodosComponent } from './components/todos/todos.component';
 @NgModule({
   declarations: [
     AppComponent,
-    TodosComponent
+    TodosComponent,
+    TodoItemComponent
   ], 
   imports: [
     BrowserModule,
