@@ -4,6 +4,6 @@
     <input (change)="onToggle(todo)" type="checkbox" />
     &nbsp;
     {{ todo.title }}
-    <button class="del">x</button>
+    <button (click)="onDelete(todo)" class="del">x</button>
   </p>
 </div>
